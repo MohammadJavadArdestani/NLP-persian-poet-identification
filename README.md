@@ -3,7 +3,7 @@ In this NLP problem, model get a line from one of three famous Iranian poets(Fer
 we use a unigram and a bigram model trained on a dataset which contains over 9 thousand lines of poems for each poet.<br>
 The probability calculates by backoff model like the following:
 ```bash
-P^(ci | ci-1) = [(y3 * P(ci | ci-1)) + (y2 * P(ci)) + (y1 * e)] 
+P`(ci | ci-1) = [(y3 * P(ci | ci-1)) + (y2 * P(ci)) + (y1 * e)] 
 y1 + y2 + y3 = 1 
 0 < e < 1 
 ```
